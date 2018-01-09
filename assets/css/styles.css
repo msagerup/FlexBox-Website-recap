@@ -9,7 +9,7 @@ html {
   font: normal 16px sans-serif;
   color: #555;
 }
-
+ul,
 nav {
   list-style: none;
 }
@@ -33,7 +33,6 @@ a.btn {
   opacity: 1;
 }
 
-
 section {
   display: flex;
   flex-direction: column;
@@ -41,6 +40,20 @@ section {
   padding: 100px 80px;
 }
 
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px
+}
 /* Header */
 
 header {
@@ -74,7 +87,20 @@ header nav li {
   margin: 0 15px;
 }
 
-  
+section h3.title {
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p {
+  max-width: 665px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
 /* HERO */
 
@@ -116,7 +142,7 @@ header nav li {
   
 .hero-content-area {
   opacity: 0;
-  margin-top: 200px;
+  margin-top: 100px;
   animation: 1s slidefade 1s forwards;
 }
 
@@ -127,8 +153,23 @@ header nav li {
   }
 }
   
+/* Destination section */
   
-  
+.destinations .grid li {
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.destinations .grid li.small {
+  flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+  flex-basis: 70%;
+}
   
   
   
